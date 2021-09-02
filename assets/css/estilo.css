@@ -520,7 +520,7 @@ height: 100vh;
   transform: rotateY(-6deg);
 padding-top: 30px;
 padding-left: 110px;
-margin-left: 14vw ;
+margin-left: 14vw !important;
 margin-top: 5vh;
 width: 30vw;
   height: 400px;

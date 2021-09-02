@@ -263,7 +263,7 @@ position: fixed;
 
 transform-origin: 50% 100%;
   transform: rotateY(-15deg);
-margin-left: -250px;
+margin-left: -40.5vw !important;
 width: 55vw !important;
 
   height:  50vh !important;
@@ -285,25 +285,14 @@ width: 55vw !important;
   mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
 }
 
- .div2 {
-
- margin-left: -100px !important;
-
-margin-top: 10px !important;
-width: 70vw !important;
-height: 50vh !important;
-}
-
-.maps iframe {
-  height: 30vh !important;
-  width: 30vh !important;
-}
+ 
 
 .container #four .div1 h2 {
-  font-size: 12px;  olor: var(--gold);
+  font-size: 12px;  color: var(--gold);
 }
 .container #four .div1 .sectiontitle h1 {
-  font-size: 12px;
+  font-size: 20px;
+  margin-left: 6vw;
   margin-bottom: 200px;
   
 
@@ -317,7 +306,7 @@ height: 50vh !important;
 }
 
 .div1 .fa, .div1 .fab {
-  font-size: 18px;
+  font-size: 30px;
 }
 .container {
   overflow: auto;

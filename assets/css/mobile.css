@@ -29,11 +29,11 @@
   animation-play-state: var(--playstate, running);
 }
  .divsobre h2 {
-  font-size: 15px !important;
+  font-size: 12px !important;
   
 }
 .divsobre h2 i{
-  font-size: 10.5px !important;
+  font-size: 8.5px !important;
   color: red;
   font-style: italic;
 }
@@ -166,8 +166,8 @@ position: fixed;
 }
 
 .buttons {
-  padding-left: 80px;
-margin-right: -200px;}
+  padding-left: 20px;
+margin-right: -180px;}
 
 .header-presentation {
   display: flex;

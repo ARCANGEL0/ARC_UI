@@ -278,7 +278,6 @@ width: 55vw !important;
   --aug-border-fallback-color: #ffd700;
   
   
-  font-size: 12px;
   color:var(--gold);
   filter: drop-shadow(0px 0px 0.125rem rgb(0,0,0));
   -webkit-mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);

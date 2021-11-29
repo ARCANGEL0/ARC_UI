@@ -827,7 +827,9 @@ body.background-haulted .header-presentation {
 
   perspective: 100px;
 }
+
 @media (max-width: 768px) {
+ 
   .definitions-container {
     width: 90%;
     max-width: 300px;

@@ -462,6 +462,7 @@ body.background-haulted .header-presentation {
   --playstate: var(--media-prefers-reduced-motion) paused;
   animation-play-state: var(--playstate, running);
 }
+
 .divserviços,
 .divsobre {
   margin-left: 150px;
@@ -829,7 +830,6 @@ body.background-haulted .header-presentation {
 }
 
 @media (max-width: 768px) {
- 
   .definitions-container {
     width: 90%;
     max-width: 300px;

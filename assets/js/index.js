@@ -78,6 +78,51 @@ $(document).ready(function () {
         }, 800);
 
     });
+
+
+if (window.matchMedia("(max-width:600px)").matches) {
+
+$("#optionsToggle").on('click',function () { 
+
+        if ($(".definitions-container").hasClass("inactive")) {
+            $(".definitions-container").toggleClass("inactive active")
+            $(".definitions-container").show("blind")
+            $('.definitions-container').animate({
+                left: '220px'
+            })          
+            }
+        else if ($('.definitions-container').hasClass('active')) {
+            $('.definitions-container').toggleClass('active inactive');
+            $('.definitions-container').animate({
+                left: '263px'
+            })
+          
+
+        }
+            })
+
+
+} else  {
+
+    $("#optionsToggle").on('click',function () { 
+
+        if ($(".definitions-container").hasClass("inactive")) {
+            $(".definitions-container").toggleClass("inactive active")
+            $(".definitions-container").show("blind")
+            $('.definitions-container').animate({
+                right: '-170px'
+            })          
+            }
+        else if ($('.definitions-container').hasClass('active')) {
+            $('.definitions-container').toggleClass('active inactive');
+            $('.definitions-container').animate({
+                right: '-245px'
+            })
+          
+
+        }
+            })
+}
     $('#close').on('click', function () {
 
         if ($('#buttons').hasClass("inactive")) {

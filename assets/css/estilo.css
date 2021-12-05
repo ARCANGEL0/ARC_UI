@@ -189,7 +189,7 @@ body.background-haulted .header-presentation {
 .color-button {
   background: none;
   border: 0;
-  width: 30%;
+  width: 160%;
   padding-bottom: -230px;
   --aug-inset: 3px;
   --aug-inset-bg: rgba(0, 0, 0, 0.25);
@@ -397,6 +397,39 @@ body.background-haulted .header-presentation {
   --aug-inlay-all: 4px;
   --aug-inlay-bg: radial-gradient(var(--gold), black);
   --aug-inlay-opacity: 0.5;
+}
+
+
+.optToggle {
+  display:flex;
+  flex-direction: column;
+  margin-top:30px;
+}
+.optionsToggle{
+margin-right:-10px;
+color: var(--gold);
+  background: none;
+  border: 0;
+  padding-right:5px;
+  height: 80%;
+  --aug-inset: 3px;
+  --aug-inset-bg: rgba(0, 0, 0, 0.25);
+  --aug-border: 2px;
+  --aug-border-bg: var(--gold);
+  --aug-border-fallback-color: var(--gold88);
+  --aug-tr: 10px;
+  --aug-bl: 10px;
+  --aug-br: 0px;
+  --aug-tl: 00px;
+}
+.optionsToggle i {
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+.optionsToggle:hover{
+
+    filter: brightness(0.65);
 }
 
 .container .mydiv {
@@ -880,6 +913,7 @@ body.background-haulted .header-presentation {
 }
 
 .definitions-container .def {
+  display: flex;
   padding: 10px;
   --aug-border: 2px;
   --aug-border-bg: var(--gold88);

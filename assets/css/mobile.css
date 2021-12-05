@@ -145,6 +145,7 @@
     position: fixed;
     bottom: -50px;
     right: -100px;
+    left: 220px ;
     height: 190px;
     width: 300px;
     margin-right: -40px;
@@ -155,6 +156,10 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+    .definitions-container .def {
+      width: 40%;
+    }
   .definitions-container .fa {
     font-size: 10px;
   }
@@ -170,6 +175,7 @@
   .buttons {
     padding-left: 20px;
     margin-right: -180px;
+    margin-left:1%;
   }
 
   .header-presentation {

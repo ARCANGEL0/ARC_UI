@@ -31,9 +31,10 @@
        <style>
   
        </style>
+
+
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146833088-1"></script>
-          
-     
+
 <br>
 <div  class="title">     
 
@@ -323,8 +324,9 @@
 
      <script>
 
+var boot = new Audio("assets/audio/beep.wav");
 
-    
+
 setTimeout(function(){
 
 $("#title").fadeIn();
@@ -332,11 +334,13 @@ $("#title").fadeIn();
 
 
 $("#title").toggleClass("glitch"); 
-
 setTimeout(function(){
+
   $("#title").toggleClass("glitch"); 
 $("#colors").fadeIn();
 $("#navbar").fadeIn();
+boot.play()
+
 }, 1950);
 }, 1900)
 

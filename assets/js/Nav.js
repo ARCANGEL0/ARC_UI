@@ -1,7 +1,10 @@
 $(document).ready(function(){
+var keypress = new Audio("assets/audio/keyenter.wav");
 
 
 $('#slide1').on('click', function(){
+    keypress.play();
+
     $('.servthree').hide();
     $('.servtwo').hide();
         $('.servfive').hide();
@@ -16,6 +19,8 @@ $('#slide1').on('click', function(){
 });
 
 $('#slide2').on('click', function(){
+keypress.play();
+
     $('.servone').hide();
     $('.servthree').hide();
         $('.servfour').hide();
@@ -29,6 +34,8 @@ $('#slide2').on('click', function(){
 });
 
 $('#slide3').on('click', function(){
+    keypress.play();
+
     $('.servone').hide();
     $('.servtwo').hide();
     $('.servfour').hide();
@@ -42,6 +49,8 @@ $('#slide3').on('click', function(){
 });
 
 $('#slide4').on('click', function(){
+    keypress.play();
+
     $('.servone').hide();
     $('.servtwo').hide();
     $('.servthree').hide();
@@ -54,6 +63,8 @@ $('#slide4').on('click', function(){
    },800);  
 });
 $('#slide5').on('click', function(){
+    keypress.play();
+
     $('.servone').hide();
     $('.servtwo').hide();
     $('.servthree').hide();

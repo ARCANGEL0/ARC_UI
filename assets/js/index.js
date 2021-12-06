@@ -6,12 +6,16 @@
 $(document).ready(function () {
 
 
+var keypress = new Audio("assets/audio/keyenter.wav");
 
     setTimeout(function () {
+
         $('.slider__inner').removeClass("glitch--animate");
     }, 2000);
 
+
     $('#inicio').on('click', function () {
+keypress.play();
 
 
         $('#two').hide();
@@ -31,6 +35,7 @@ $(document).ready(function () {
 
 
     $('#sobre').on('click', function () {
+keypress.play();
 
         $('#one').hide();
 
@@ -48,6 +53,7 @@ $(document).ready(function () {
 
 
     $('#servicos').on('click', function () {
+keypress.play();
 
         $('#one').hide();
 
@@ -64,6 +70,7 @@ $(document).ready(function () {
     });
 
     $('#contato').on('click', function () {
+keypress.play();
 
         $('#one').hide();
 
@@ -83,6 +90,7 @@ $(document).ready(function () {
 if (window.matchMedia("(max-width:600px)").matches) {
 
 $("#optionsToggle").on('click',function () { 
+keypress.play();
 
         if ($(".definitions-container").hasClass("inactive")) {
             $(".definitions-container").toggleClass("inactive active")
@@ -105,6 +113,7 @@ $("#optionsToggle").on('click',function () {
 } else  {
 
     $("#optionsToggle").on('click',function () { 
+keypress.play();
 
         if ($(".definitions-container").hasClass("inactive")) {
             $(".definitions-container").toggleClass("inactive active")
@@ -124,6 +133,7 @@ $("#optionsToggle").on('click',function () {
             })
 }
     $('#close').on('click', function () {
+keypress.play();
 
         if ($('#buttons').hasClass("inactive")) {
             $('#buttons').toggleClass('inactive active')
@@ -153,6 +163,7 @@ $("#optionsToggle").on('click',function () {
 
 
     $('#greentheme').on('click', function () {
+keypress.play();
 
         $('.header-presentation').addClass('glitch--animate');
         setTimeout(function () {
@@ -172,6 +183,8 @@ $("#optionsToggle").on('click',function () {
     });
 
     $('#bluetheme').on('click', function () {
+        keypress.play();
+
         $('.header-presentation').addClass('glitch--animate');
         setTimeout(function () {
             $('.header-presentation').removeClass("glitch--animate");
@@ -189,6 +202,8 @@ $("#optionsToggle").on('click',function () {
 
 
     $('#goldtheme').on('click', function () {
+        keypress.play();
+
 
         $('.header-presentation').addClass('glitch--animate');
         setTimeout(function () {

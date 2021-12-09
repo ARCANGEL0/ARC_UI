@@ -6,7 +6,6 @@
 $(document).ready(function () {
 
 
-var keypress = new Audio("assets/audio/keyenter.wav");
 
     setTimeout(function () {
 

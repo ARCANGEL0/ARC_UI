@@ -399,18 +399,17 @@ body.background-haulted .header-presentation {
   --aug-inlay-opacity: 0.5;
 }
 
-
 .optToggle {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  margin-top:30px;
+  margin-top: 30px;
 }
-.optionsToggle{
-margin-right:-10px;
-color: var(--gold);
+.optionsToggle {
+  margin-right: -10px;
+  color: var(--gold);
   background: none;
   border: 0;
-  padding-right:5px;
+  padding-right: 5px;
   height: 80%;
   --aug-inset: 3px;
   --aug-inset-bg: rgba(0, 0, 0, 0.25);
@@ -423,13 +422,12 @@ color: var(--gold);
   --aug-tl: 00px;
 }
 .optionsToggle i {
-    font-size: 8px;
-    margin-left: 5px;
+  font-size: 8px;
+  margin-left: 5px;
 }
 
-.optionsToggle:hover{
-
-    filter: brightness(0.65);
+.optionsToggle:hover {
+  filter: brightness(0.65);
 }
 
 .container .mydiv {
@@ -838,6 +836,10 @@ color: var(--gold);
 .fa-language {
   margin-bottom: 6px;
   margin-right: 4px;
+}
+
+.languagetxt {
+  font-size: 12px !important;
 }
 .definitions-container {
   position: fixed;

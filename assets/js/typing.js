@@ -1,11 +1,11 @@
 // set typing speed and wait times
 var timeInit = 1000;     // initial wait before typing first line
-var timeGap = 1000;      // wait time between each line
-var timeChar = 40;       // time until next letter
+var timeGap = 700;      // wait time between each line
+var timeChar = 2;       // time until next letter
 
 var cursorChar = '&#9608;';
 
-var originId = ['line1', 'line2','line3','line4'];
+var originId = ['line1', 'line2', 'line3', 'line4'];
 var originText = new Array();
 for (var i = 0; i < originId.length; i++) {
   originText.push(document.getElementById(originId[i]).innerHTML);
@@ -16,14 +16,14 @@ var cursorLine = document.getElementById('cursor-line');
 var currentTimeout;
 var showCursor;
 
-var typeWriter = function(index) {
+var typeWriter = function (index) {
   var loc = document.getElementById(originId[index]);
   var fullText = originText[index];
   var letterCount = 0;
 
   // this function spits out one letter per call, then calls the subsequent typeLetter()
-  var typeLetter = function() {
-    currentTimeout = setTimeout(function() {
+  var typeLetter = function () {
+    currentTimeout = setTimeout(function () {
       loc.className = 'visible';
       letterCount += 1;
       var showText = fullText.substring(0, letterCount);
@@ -42,7 +42,7 @@ var typeWriter = function(index) {
 
   // show cursor on next line
   var totalTime = fullText.length * timeChar + timeChar;
-  showCursor = setTimeout(function() {
+  showCursor = setTimeout(function () {
     document.getElementById('cursor-line').className = 'visible';
   }, totalTime);
 };
@@ -63,8 +63,8 @@ for (var i = 0; i < originId.length; i++) {
 // calls setTimeout for each line
 var typeLineTimeout = new Array();
 for (var i = 0; i < originId.length; i++) {
-  typeLineTimeout[i] = setTimeout((function(index) {
-    return function() {
+  typeLineTimeout[i] = setTimeout((function (index) {
+    return function () {
       cursorLine.className = 'hidden';
       typeWriter(index);
     }
@@ -73,7 +73,7 @@ for (var i = 0; i < originId.length; i++) {
 };
 
 // stops all timeouts
-var skip = function() {
+var skip = function () {
   clearTimeout(currentTimeout);
   clearTimeout(showCursor);
   for (var i = 0; i < typeLineTimeout.length; i++) {
@@ -89,7 +89,7 @@ var skip = function() {
 //   loc.className = 'visible';
 // };
 
-var rewriteText = function(element, index, array) {
+var rewriteText = function (element, index, array) {
   var loc = document.getElementById(element);
   loc.innerHTML = '' + originText[index];
   loc.className = 'visible';
@@ -97,7 +97,7 @@ var rewriteText = function(element, index, array) {
 
 
 // trigger skip and rewrite on pressing enter or spacebar
-window.onkeydown = function(key){
+window.onkeydown = function (key) {
   if (key.which === 13 || key.which === 32) {
     skip();
     originId.forEach(rewriteText);

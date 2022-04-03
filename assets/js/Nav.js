@@ -1,82 +1,108 @@
-$(document).ready(function(){
-var keypress = new Audio("assets/audio/keyenter.wav");
+$(document).ready(function () {
+    var keypress = new Audio("assets/audio/keyenter.wav");
 
 
-$('#slide1').on('click', function(){
-    keypress.play();
+    // Click function for show the Modal
 
-    $('.servthree').hide();
-    $('.servtwo').hide();
+    $(".show").on("click", function () {
+        $(".mask").addClass("active");
+    });
+
+    // Function for close the Modal
+
+    function closeModal() {
+        $(".mask").removeClass("active");
+    }
+
+    // Call the closeModal function on the clicks/keyboard
+
+    $(".close, .mask").on("click", function () {
+        closeModal();
+    });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27) {
+            closeModal();
+        }
+    });
+
+
+
+    $('#slide1').on('click', function () {
+        keypress.play();
+
+        $('.servthree').hide();
+        $('.servtwo').hide();
         $('.servfive').hide();
 
-    $('.servfour').hide();
-    $('.servone').show();
-    $('.servone').addClass('glitch--animate');
-    setTimeout(function () {
-        $('.servone').removeClass("glitch--animate");
-   },800);    
-    
-});
-
-$('#slide2').on('click', function(){
-keypress.play();
-
-    $('.servone').hide();
-    $('.servthree').hide();
         $('.servfour').hide();
-    $('.servfive').hide();
+        $('.servone').show();
+        $('.servone').addClass('glitch--animate');
+        setTimeout(function () {
+            $('.servone').removeClass("glitch--animate");
+        }, 800);
 
-    $('.servtwo').show();
-    $('.servtwo').addClass('glitch--animate');
-    setTimeout(function () {
-        $('.servtwo').removeClass("glitch--animate");
-   },1200);  
-});
+    });
 
-$('#slide3').on('click', function(){
-    keypress.play();
+    $('#slide2').on('click', function () {
+        keypress.play();
 
-    $('.servone').hide();
-    $('.servtwo').hide();
-    $('.servfour').hide();
-    $('.servfive').hide();
+        $('.servone').hide();
+        $('.servthree').hide();
+        $('.servfour').hide();
+        $('.servfive').hide();
 
-    $('.servthree').show();
-    $('.servthree').addClass('glitch--animate');
-    setTimeout(function () {
-        $('.servthree').removeClass("glitch--animate");
-   },800);  
-});
+        $('.servtwo').show();
+        $('.servtwo').addClass('glitch--animate');
+        setTimeout(function () {
+            $('.servtwo').removeClass("glitch--animate");
+        }, 1200);
+    });
 
-$('#slide4').on('click', function(){
-    keypress.play();
+    $('#slide3').on('click', function () {
+        keypress.play();
 
-    $('.servone').hide();
-    $('.servtwo').hide();
-    $('.servthree').hide();
-    $('.servfive').hide();
+        $('.servone').hide();
+        $('.servtwo').hide();
+        $('.servfour').hide();
+        $('.servfive').hide();
 
-    $('.servfour').show();
-    $('.servfour').addClass('glitch--animate');
-    setTimeout(function () {
-        $('.servfour').removeClass("glitch--animate");
-   },800);  
-});
-$('#slide5').on('click', function(){
-    keypress.play();
+        $('.servthree').show();
+        $('.servthree').addClass('glitch--animate');
+        setTimeout(function () {
+            $('.servthree').removeClass("glitch--animate");
+        }, 800);
+    });
 
-    $('.servone').hide();
-    $('.servtwo').hide();
-    $('.servthree').hide();
-    $('.servfour').hide();
+    $('#slide4').on('click', function () {
+        keypress.play();
 
-    $('.servfive').show();
-    $('.servfive').addClass('glitch--animate');
+        $('.servone').hide();
+        $('.servtwo').hide();
+        $('.servthree').hide();
+        $('.servfive').hide();
 
-    setTimeout(function () {
-        $('.servfive').removeClass("glitch--animate");
-   },800);  
-});
+        $('.servfour').show();
+        $('.servfour').addClass('glitch--animate');
+        setTimeout(function () {
+            $('.servfour').removeClass("glitch--animate");
+        }, 800);
+    });
+    $('#slide5').on('click', function () {
+        keypress.play();
+
+        $('.servone').hide();
+        $('.servtwo').hide();
+        $('.servthree').hide();
+        $('.servfour').hide();
+
+        $('.servfive').show();
+        $('.servfive').addClass('glitch--animate');
+
+        setTimeout(function () {
+            $('.servfive').removeClass("glitch--animate");
+        }, 800);
+    });
 
 
 

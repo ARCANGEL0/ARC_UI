@@ -2,8 +2,6 @@ $(document).ready(function () {
     var keypress = new Audio("assets/audio/keyenter.wav");
 
 
-
-
     $('#slide1').on('click', function () {
         keypress.play();
 

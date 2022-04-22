@@ -86,7 +86,7 @@ keypress.play();
     });
 
 
-if (window.matchMedia("(max-width:600px)").matches) {
+if (window.matchMedia("(max-width:800px)").matches) {
 
 $("#optionsToggle").on('click',function () { 
 keypress.play();
@@ -95,13 +95,13 @@ keypress.play();
             $(".definitions-container").toggleClass("inactive active")
             $(".definitions-container").show("blind")
             $('.definitions-container').animate({
-                left: '220px'
+                left: '260px'
             })          
             }
         else if ($('.definitions-container').hasClass('active')) {
             $('.definitions-container').toggleClass('active inactive');
             $('.definitions-container').animate({
-                left: '263px'
+                left: '306px'
             })
           
 

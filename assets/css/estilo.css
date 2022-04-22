@@ -232,6 +232,15 @@ body.background-haulted .header-presentation {
   color: rgb(255, 45, 45);
   --aug-border-bg: rgba(197, 35, 35, 0.8);
 }
+
+.logoHeader{
+
+    margin-left: -4%;
+      margin-top: -5%;
+
+      width: 40%;
+      height: 50%
+}
 .button {
   padding: 0;
   border: none;

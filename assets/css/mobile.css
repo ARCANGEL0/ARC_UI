@@ -7,6 +7,11 @@
   .divserviços .fa {
     font-size: 8vh;
   }
+
+
+  #sobnote {
+  font-size: 7px !important;
+}
   .divserviços h1,
   .divsobre h1 {
     font-size: 20px;

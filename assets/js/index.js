@@ -85,23 +85,36 @@ keypress.play();
 
     });
 
-
-if (window.matchMedia("(max-width:800px)").matches) {
-
+//responsive
+if ($(window).width() < 960) {
+$('#buttons').toggleClass('active inactive');
+            $('#buttons').hide("blind");
+            $('#navbar').animate({
+                height: '150px'
+            })
+            $('#close').animate({
+                'margin-bottom': '5px'
+            })
+ $('.definitions-container').animate({
+                left: '306px'
+            })  
 $("#optionsToggle").on('click',function () { 
 keypress.play();
+
+
+
 
         if ($(".definitions-container").hasClass("inactive")) {
             $(".definitions-container").toggleClass("inactive active")
             $(".definitions-container").show("blind")
             $('.definitions-container').animate({
-                left: '260px'
+                left: '306px'
             })          
             }
         else if ($('.definitions-container').hasClass('active')) {
             $('.definitions-container').toggleClass('active inactive');
             $('.definitions-container').animate({
-                left: '306px'
+                left: '260px'
             })
           
 

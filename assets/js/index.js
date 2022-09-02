@@ -12,6 +12,23 @@ let language = 'ptbr';
         $('.slider__inner').removeClass("glitch--animate");
     }, 2000);
 
+    
+    
+$('#language').on('click', function () {
+
+keypress.play();
+    if(language=='ptbr') {
+     language = 'enus'
+        console.log(language)
+    }
+    else if (language=='enus') {
+     language = 'ptbr'
+       console.log(language)
+    }
+
+});
+
+    
 
     $('#inicio').on('click', function () {
 keypress.play();

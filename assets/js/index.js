@@ -5,7 +5,7 @@
 
 $(document).ready(function () {
 
-
+let language = 'ptbr';
 
     setTimeout(function () {
 
@@ -168,7 +168,19 @@ keypress.play();
     });
 
 
+$('#language').on('click', function () {
 
+keypress.play();
+    if(language=='ptbr') {
+     language = 'enus'
+        console.log(language)
+    }
+    else if (language=='enus') {
+     language = 'ptbr'
+       console.log(language)
+    }
+
+});
 
     // Color changer
 

@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>HA.Design_</title>
+  <title>ARCANGELO</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="assets/css/augmented.css">
@@ -292,7 +292,7 @@
             class="fa fa-terminal"></i></button>
         <button augmented-ui="tr-clip tl-clip bl-clip br-clip exe" class="color-button" id="bluetheme"><i
             class="fa fa-terminal"></i></button>
-        <button onclick="location.href='https://arcangelo.dev/EN-US'" augmented-ui="tr-clip tl-clip bl-clip br-clip exe"
+        <button onclick="mudarIdioma()" augmented-ui="tr-clip tl-clip bl-clip br-clip exe"
           class="color-button" id="language">
 
           <i class="fa fa-language"></i>
@@ -461,7 +461,7 @@ ASSISTÊNCIA TÉCNICA E SOLUÇÕES EM TI
     RenderString("\n\n");
     await DrawLines(header);
     RenderString('\nsplash.js   files/\n\n');
-
+await Delay(600);
     await DrawCommands('root「」ARC @ /home/files --> Δ clear');
     ResetTerminal();
     await DrawCommands('root「」ARC @ /home/files --> Δ cat README.md');

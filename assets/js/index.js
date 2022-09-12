@@ -219,17 +219,39 @@ keypress.play();
         color = 1;
     break;
   case 1:
-        $(':root').css('--gold88', '#02FF0087');
+    
+              $(':root').css('--gold88', 'rgba(240, 240,240, 0.53)');
+        $(':root').css('--gold', 'rgba(244, 244, 244, 0.75)');
+        $(':root').css('--goldDark', 'rgba(200, 200, 200, 0.61)');
+        $(':root').css('--hovercolor', '#FF0000');
+        $(':root').css('--hovercolorbg', 'rgba(255, 0, 4, .25098039215686274)');
+        $(':root').css('--inputfocus', 'rgba(255, 34, 0, 0.64)');
+        $(':root').css('--termcolor', 'rgba(12, 12, 12, 0.65)');
+        color = 2;
+    break;
+  case 2:
+        $(':root').css('--gold88', 'rgba(255,0,0, 0.53)');
+        $(':root').css('--gold', '#ff0400');
+        $(':root').css('--goldDark', '#ed2525');
+        $(':root').css('--hovercolor', '#ffc400');
+        $(':root').css('--hovercolorbg', 'rgba(255,196,0,0.3)');
+        $(':root').css('--inputfocus', 'rgba(23, 255, 216, 0.644)');
+        $(':root').css('--termcolor', '#0f0000');
+        color=3;
+        break;
+    case 3:
+      $(':root').css('--gold88', '#02FF0087');
         $(':root').css('--gold', '#29FF00');
         $(':root').css('--goldDark', '#45ED25');
         $(':root').css('--hovercolor', '#FF0000');
         $(':root').css('--hovercolorbg', '#FF000040');
         $(':root').css('--inputfocus', 'rgba(23, 255, 42, .6431372549019608)');
         $(':root').css('--termcolor', '#040F00');
-        color = 2;
-    break;
-  case 2:
-        $(':root').css('--gold88', 'rgba(0, 255, 213, 0.53)');
+
+        color=4;
+        break;
+    case 4:
+         $(':root').css('--gold88', 'rgba(0, 255, 213, 0.53)');
         $(':root').css('--gold', '#00ffd5');
         $(':root').css('--goldDark', '#25edc2');
         $(':root').css('--hovercolor', '#FF0000');
@@ -237,15 +259,7 @@ keypress.play();
         $(':root').css('--inputfocus', 'rgba(23, 255, 216, 0.644)');
         $(':root').css('--termcolor', '#000f0d');
         color=0;
-  default:
-     $(':root').css('--gold88', 'rgba(0, 255, 213, 0.53)');
-        $(':root').css('--gold', '#00ffd5');
-        $(':root').css('--goldDark', '#25edc2');
-        $(':root').css('--hovercolor', '#FF0000');
-        $(':root').css('--hovercolorbg', 'rgba(255, 0, 4, .25098039215686274)');
-        $(':root').css('--inputfocus', 'rgba(23, 255, 216, 0.644)');
-        $(':root').css('--termcolor', '#000f0d');
-        color=0;
+        break;
 }
 
       

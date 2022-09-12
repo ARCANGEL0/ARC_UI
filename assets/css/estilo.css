@@ -184,9 +184,15 @@ body.background-haulted .header-presentation {
 }
 
 .color-button .fa {
-  padding: 7px 0 0 7px;
+  padding: 2px 0 0 2px;
+  color: var(--gold);
 }
-.color-button {
+.color-button:hover .fa {
+  padding: 2px 0 0 2px;
+  color: var(--hovercolor);
+}
+.color-button,
+.language-btn {
   background: none;
   border: 0;
   width: 160%;
@@ -194,45 +200,35 @@ body.background-haulted .header-presentation {
   --aug-inset: 3px;
   --aug-inset-bg: rgba(0, 0, 0, 0.25);
   --aug-border: 2px;
-  --aug-border-bg: #ffd700;
-  --aug-border-fallback-color: #ffd700;
+  --aug-border-bg: var(--gold);
+  --aug-border-fallback-color: var(--gold);
   --aug-tr: 10px;
   --aug-bl: 10px;
   --aug-br: 0px;
   --aug-tl: 00px;
 }
-.color-button:first-child {
-  color: gold;
+
+.language-btn {
+  color: var(--gold);
+  --aug-border-bg: var(--gold88);
+
+  padding: 2px;
 }
-.color-button:first-child:hover {
-  color: #c2a200;
-  --aug-border-bg: #c2a200bb;
-}
-.color-button:nth-child(2) {
-  color: #0fff00;
-  --aug-border-bg: #43ff00bb;
-}
-.color-button:nth-child(2):hover {
-  color: #20ad01;
-  --aug-border-bg: #13b101bb;
-}
-.color-button:nth-child(3) {
-  color: #00d9ff;
-  --aug-border-bg: #00d9ffb0;
-}
-.color-button:nth-child(3):hover {
-  color: #008ea7;
-  --aug-border-bg: #009fbb98;
-}
-.color-button:last-child {
-  color: rgb(245, 17, 17);
-  --aug-border-bg: rgba(245, 17, 17, 0.8);
-}
-.color-button:last-child:hover {
-  color: rgb(255, 45, 45);
-  --aug-border-bg: rgba(197, 35, 35, 0.8);
+.fa-terminal:hover,
+.color-button:hover,
+.language-btn:hover {
+  color: var(--hovercolor);
+  font-color: var(--hovercolor);
+  --aug-inset-bg: var(--hovercolorbg);
+  --aug-border-bg: var(--hovercolor);
 }
 
+.color-button {
+
+}
+.color-button:hover {
+
+}
 .logoHeader{
 
     margin-left: -4%;

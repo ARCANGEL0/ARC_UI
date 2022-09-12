@@ -148,7 +148,7 @@ keypress.play();
             $(".definitions-container").toggleClass("inactive active")
             $(".definitions-container").show("blind")
             $('.definitions-container').animate({
-                right: '-170px'
+                right: '-8.05vw'
             })          
             }
         else if ($('.definitions-container').hasClass('active')) {
@@ -168,17 +168,17 @@ keypress.play();
             $('#buttons').toggleClass('inactive active')
             $('#buttons').show("blind");
             $('#navbar').animate({
-                height: '400px'
+                height: '60vh'
             })
         }
         else if ($('#buttons').hasClass('active')) {
             $('#buttons').toggleClass('active inactive');
             $('#buttons').hide("blind");
             $('#navbar').animate({
-                height: '150px'
+                height: '10.2vh'
             })
             $('#close').animate({
-                'margin-bottom': '5px'
+                'margin-top': '0vh'
             })
 
         }

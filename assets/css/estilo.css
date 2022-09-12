@@ -173,7 +173,7 @@ body.background-haulted .header-presentation {
 .buttons {
   display: flex;
   flex-direction: column;
-  margin-top: -5px;
+  margin-top: 1.2vh;
   margin-right: -20px;
   padding-left: 30px;
 }
@@ -506,7 +506,7 @@ body.background-haulted .header-presentation {
 .divserviços,
 .divsobre {
   margin-left: 150px;
-  margin-top: 20px;
+  margin-top: 0px;
   width: 75vw;
   padding-left: 20px;
   --aug-bl: 25px;
@@ -853,7 +853,7 @@ body.background-haulted .header-presentation {
 .definitions-container {
   position: fixed;
   bottom: -30px;
-  right: -170px;
+  right: -8.05vw;
   height: 190px;
   width: 300px;
   margin-bottom: 2px;
@@ -907,8 +907,9 @@ body.background-haulted .header-presentation {
 
   --aug-border-fallback-color: var(--gold);
 
-  height: 90%;
+  height: 100vh;
   width: 100%;
+  margin-top: -8vh;
   padding: 20px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 0rem;
@@ -3869,7 +3870,7 @@ h1.top-left {
 }
 
 #two {
-  margin-top: 80px;
+  margin-top: 5vh;
 }
 
 @keyframes boot {
@@ -3920,7 +3921,7 @@ h1.top-left {
     monospace;
   font-size: 14px;
   line-height: 1;
-  margin-top: -100px;
+  margin-top: -25vh;
   display: inherit;
 }
 .blink {

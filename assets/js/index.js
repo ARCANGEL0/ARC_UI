@@ -103,18 +103,45 @@ keypress.play();
     });
 
 //responsive
-if ($(window).width() < 960) {
+if ($(window).width() < 410) {
 $('#buttons').toggleClass('active inactive');
             $('#buttons').hide("blind");
             $('#navbar').animate({
-                height: '150px'
+                height: '8vh'
             })
             $('#close').animate({
-                'margin-bottom': '5px'
+                'margin-top': '0px'
             })
  $('.definitions-container').animate({
-                left: '306px'
+                left: '83%'
             })  
+
+
+
+    $('#close').on('click', function () {
+keypress.play();
+
+        if ($('#buttons').hasClass("inactive")) {
+            $('#buttons').toggleClass('inactive active')
+            $('#buttons').show("blind");
+            $('#navbar').animate({
+                height: '56vh'
+            })
+        }
+        else if ($('#buttons').hasClass('active')) {
+            $('#buttons').toggleClass('active inactive');
+            $('#buttons').hide("blind");
+            $('#navbar').animate({
+                height: '8vh'
+            })
+            $('#close').animate({
+                'margin-top': '0vh'
+            })
+
+        }
+    });
+
+
 $("#optionsToggle").on('click',function () { 
 keypress.play();
 
@@ -125,13 +152,13 @@ keypress.play();
             $(".definitions-container").toggleClass("inactive active")
             $(".definitions-container").show("blind")
             $('.definitions-container').animate({
-                left: '306px'
+                left: '83%'
             })          
             }
         else if ($('.definitions-container').hasClass('active')) {
             $('.definitions-container').toggleClass('active inactive');
             $('.definitions-container').animate({
-                left: '260px'
+                left: '47.5%'
             })
           
 
@@ -139,7 +166,84 @@ keypress.play();
             })
 
 
-} else  {
+}
+
+
+else if ( $(window).width() > 410 && $(window).width() < 920 ) { 
+
+
+// block 2
+
+$('#buttons').toggleClass('active inactive');
+            $('#buttons').hide("blind");
+            $('#navbar').animate({
+                height: '5vh'
+            })
+            $('#close').animate({
+                'margin-top': '0px'
+            })
+ $('.definitions-container').animate({
+                left: '85%',
+                'margin-bottom':'10%'
+            })  
+
+
+
+    $('#close').on('click', function () {
+keypress.play();
+
+        if ($('#buttons').hasClass("inactive")) {
+            $('#buttons').toggleClass('inactive active')
+            $('#buttons').show("blind");
+            $('#navbar').animate({
+                height: '42vh'
+            })
+        }
+        else if ($('#buttons').hasClass('active')) {
+            $('#buttons').toggleClass('active inactive');
+            $('#buttons').hide("blind");
+            $('#navbar').animate({
+                height: '5vh'
+            })
+            $('#close').animate({
+                'margin-top': '0vh'
+            })
+
+        }
+    });
+
+
+$("#optionsToggle").on('click',function () { 
+keypress.play();
+
+
+
+
+        if ($(".definitions-container").hasClass("inactive")) {
+            $(".definitions-container").toggleClass("inactive active")
+            $(".definitions-container").show("blind")
+            $('.definitions-container').animate({
+                left: '85%',
+                'margin-bottom':'10%'
+            })          
+            }
+        else if ($('.definitions-container').hasClass('active')) {
+            $('.definitions-container').toggleClass('active inactive');
+            $('.definitions-container').animate({
+                left: '54%',
+                'margin-bottom':'14%'
+            })
+          
+
+        }
+            })
+
+
+
+// block 2
+}
+
+ else  {
 
     $("#optionsToggle").on('click',function () { 
 keypress.play();
@@ -160,7 +264,7 @@ keypress.play();
 
         }
             })
-}
+
     $('#close').on('click', function () {
 keypress.play();
 
@@ -168,7 +272,7 @@ keypress.play();
             $('#buttons').toggleClass('inactive active')
             $('#buttons').show("blind");
             $('#navbar').animate({
-                height: '60vh'
+                height: '0vh'
             })
         }
         else if ($('#buttons').hasClass('active')) {
@@ -183,7 +287,7 @@ keypress.play();
 
         }
     });
-
+}
 
 $('#language').on('click', function () {
 

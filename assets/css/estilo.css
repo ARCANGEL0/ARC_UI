@@ -925,6 +925,7 @@ body.background-haulted .header-presentation {
   padding: 10px;
   --aug-border: 2px;
   --aug-border-bg: var(--gold88);
+  --aug-inset-bg: var(--termcolor);
   --aug-tr: 6px;
   --aug-bl: 6px;
   --aug-br: 25px;

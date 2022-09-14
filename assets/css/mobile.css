@@ -1,5 +1,19 @@
 /*mobile*/
-@media (max-width: 600px) {
+
+  @media only screen and 
+  (min-width: 410px) and
+  (max-width: 764px) 
+  {
+
+
+        #one {
+          margin-top: 25%;
+        }
+
+        }
+
+
+@media (max-width: 760px) {
 
   .divserviços {
     margin-top: 20px !important;
@@ -140,11 +154,12 @@
   }
   .inicio .code {
     margin-left: -20px;
+
   }
   #one pre,
   #one p {
     margin-left: -20px;
-    font-size: 2.2vw;
+    font-size: 2.45vw;
   }
   .blink {
     font-size: 2.2vw;
@@ -152,7 +167,8 @@
 
   .definitions-container {
     position: fixed;
-    bottom: -50px;
+    bottom: -9.5%;
+    margin-bottom: 5%;
     right: -100px;
     left: 260px ;
     height: 190px;
@@ -167,7 +183,7 @@
   }
 
     .definitions-container .def {
-      width: 40%;
+      width: 100%%;
     }
   .definitions-container .fa {
     font-size: 10px;
@@ -230,14 +246,13 @@
   }
   .definitions-container1 .def1 {
     position: fixed;
-    margin-top: 40px;
     --aug-bl: 25px;
     --aug-tr: 30px;
 
     --aug-border-bg: var(--gold88);
     --aug-border-fallback-color: var(--gold);
 
-    height: 80%;
+    height: 100vh;
     width: 100%;
     color: rgba(255, 255, 255, 0.8);
     font-size: 0rem;

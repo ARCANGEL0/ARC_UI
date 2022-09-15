@@ -14,10 +14,11 @@
 
 
 @media (max-width: 760px) {
-
+  .divportfolio,
   .divserviços {
     margin-top: 20px !important;
   }
+    .divportfolio .fa,
   .divserviços .fa {
     font-size: 8vh;
   }
@@ -26,6 +27,7 @@
   #sobnote {
   font-size: 7px !important;
 }
+  .divportfolio h1
   .divserviços h1,
   .divsobre h1 {
     font-size: 20px;
@@ -71,12 +73,15 @@
   .sobwrapper {
     margin-left: 20px !important;
   }
+  .divportfolio h2,
   .divserviços h2 {
     font-size: 6.2vw;
   }
+  .divportfolio li,
   .divserviços li {
     font-size: 4vw;
   }
+  .divportfolio,
   .divserviços {
     margin-left: -9px;
     margin-top: -20px;

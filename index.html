@@ -14,8 +14,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/augmented.css">
   <link rel="icon" href="assets/images/favicon.ico" />
 
-  <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -27,7 +25,34 @@
   <script src="assets/js/typing.js"></script>
 
   <link rel="stylesheet" type="text/css" href="assets/css/text-cursor.css">
+<link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet"
+>
 
+  <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
+
+<style>
+ 
+.glider-prev{ 
+margin-left: 3%;
+margin-top: 3.5%;
+ }
+
+ .glider-next {
+  margin-right: 5%;
+margin-top: 3.5%;
+
+ }
+
+.glider-prev,
+.glider-next{
+    color: var(--gold) !important;
+
+}
+
+
+
+</style>
 </head>
 
 <body>
@@ -106,6 +131,27 @@
         </section>
 
 
+   <section id="gallery">
+
+          <div class="divportfolio" augmented-ui="tr-clip tl-clip bl-clip br-clip exe">
+            <h1>Portfólio</h1>
+
+
+            <div class="servwrapper">
+             
+           <div class="glider-contain">
+  <div class="glider">
+ 
+
+  </div>
+
+  <button aria-label="Previous" class="glider-prev">⭀</button>
+  <button aria-label="Next" class="glider-next">⥱</button>
+
+</div>
+
+            </div>
+        </section>
 
         <section id="three">
 
@@ -330,8 +376,23 @@
   </div>
 </body>
 <script src="assets/js/typing.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
 <script>
+
+//portfolio
+
+
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 2,
+  slidesToScroll: 1,
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
+//portfolio
 
 
   var keypress = new Audio("assets/audio/keyenter.wav");

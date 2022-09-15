@@ -5,6 +5,10 @@
 
 $(document).ready(function () {
 
+
+
+
+
 let language = 'ptbr';
 
     setTimeout(function () {
@@ -36,7 +40,7 @@ keypress.play();
 
         $('#two').hide();
         $('#three').hide();
-
+  $('#gallery').hide();
         $('#four').hide();
         $('#four').hide();
 
@@ -54,6 +58,7 @@ keypress.play();
 keypress.play();
 
         $('#one').hide();
+  $('#gallery').hide();
 
         $('#two').show();
         $('#four').hide();
@@ -72,6 +77,7 @@ keypress.play();
 keypress.play();
 
         $('#one').hide();
+  $('#gallery').hide();
 
         $('#two').hide();
         $('#four').hide();
@@ -89,6 +95,7 @@ keypress.play();
 keypress.play();
 
         $('#one').hide();
+  $('#gallery').hide();
 
         $('#two').hide();
         $('#three').hide();
@@ -101,6 +108,27 @@ keypress.play();
         }, 800);
 
     });
+
+
+ $('#portfolio').on('click', function () {
+keypress.play();
+
+        $('#one').hide();
+  $('#gallery').show();
+
+        $('#two').hide();
+        $('#three').hide();
+
+        $('#four').hide();
+        $('.divportfolio').addClass("glitch--animate");
+        setTimeout(function () {
+
+            $('.divportfolio').removeClass("glitch--animate");
+        }, 800);
+
+    });
+
+
 
 //responsive
 if ($(window).width() < 410) {

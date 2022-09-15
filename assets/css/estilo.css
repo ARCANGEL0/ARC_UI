@@ -43,7 +43,6 @@ html {
 }
 body {
   background-color: black;
-
   overflow-x: hidden;
 }
 body.anti-aug-transitions *,
@@ -469,6 +468,7 @@ body.background-haulted .header-presentation {
 #sobnote {
   font-size: 10px;
 }
+.divportfolio h1,
 .divserviços h1,
 .divsobre h1 {
   font-size: 50px;
@@ -498,7 +498,7 @@ body.background-haulted .header-presentation {
   --playstate: var(--media-prefers-reduced-motion) paused;
   animation-play-state: var(--playstate, running);
 }
-
+.divportfolio,
 .divserviços,
 .divsobre {
   margin-left: 150px;

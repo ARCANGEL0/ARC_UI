@@ -27,6 +27,12 @@
   #sobnote {
   font-size: 7px !important;
 }
+
+#portfolioTitle,
+#serviceTitle {
+  
+  font-size: 1rem;
+}
   .divportfolio h1
   .divserviços h1,
   .divsobre h1 {

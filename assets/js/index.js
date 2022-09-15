@@ -131,7 +131,7 @@ keypress.play();
 
 
 //responsive
-if ($(window).width() < 410) {
+if ($(window).width() < 410 && $(window).width > 380) {
 $('#buttons').toggleClass('active inactive');
             $('#buttons').hide("blind");
             $('#navbar').animate({
@@ -196,6 +196,70 @@ keypress.play();
 
 }
 
+else if ($(window).width() < 380) {
+$('#buttons').toggleClass('active inactive');
+            $('#buttons').hide("blind");
+            $('#navbar').animate({
+                height: '12vh'
+            })
+            $('#close').animate({
+                'margin-top': '0px'
+            })
+ $('.definitions-container').animate({
+                left: '83%'
+            })  
+
+
+
+    $('#close').on('click', function () {
+keypress.play();
+
+        if ($('#buttons').hasClass("inactive")) {
+            $('#buttons').toggleClass('inactive active')
+            $('#buttons').show("blind");
+            $('#navbar').animate({
+                height: '68vh'
+            })
+        }
+        else if ($('#buttons').hasClass('active')) {
+            $('#buttons').toggleClass('active inactive');
+            $('#buttons').hide("blind");
+            $('#navbar').animate({
+                height: '12vh'
+            })
+            $('#close').animate({
+                'margin-top': '0vh'
+            })
+
+        }
+    });
+
+
+$("#optionsToggle").on('click',function () { 
+keypress.play();
+
+
+
+
+        if ($(".definitions-container").hasClass("inactive")) {
+            $(".definitions-container").toggleClass("inactive active")
+            $(".definitions-container").show("blind")
+            $('.definitions-container').animate({
+                left: '83%'
+            })          
+            }
+        else if ($('.definitions-container').hasClass('active')) {
+            $('.definitions-container').toggleClass('active inactive');
+            $('.definitions-container').animate({
+                left: '47.5%'
+            })
+          
+
+        }
+            })
+
+
+}
 
 else if ( $(window).width() > 410 && $(window).width() < 920 ) { 
 

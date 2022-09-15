@@ -1,5 +1,20 @@
 /*mobile*/
+ @media only screen and
+(max-width:380px) {
+  
+#serviceTitle,
+#portfolioTitle {
+  margin-left: 12vw !important;
+}
 
+      #gallery { 
+        margin-top: -7.5vh !important;
+      }
+      #three {
+          margin-top: -6vh !important;
+        }
+  
+}
   @media only screen and 
   (min-width: 410px) and
   (max-width: 764px) 
@@ -8,6 +23,9 @@
 
         #one {
           margin-top: 25%;
+        }
+        .divportfolio, .divserviços {
+          margin-top: -5vh !important;
         }
 
         }

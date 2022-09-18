@@ -7,6 +7,7 @@ $(document).ready(function () {
 
 
 
+     glider.refresh(true);
 
 
 let language = 'ptbr';
@@ -37,7 +38,7 @@ keypress.play();
     $('#inicio').on('click', function () {
 keypress.play();
 
-
+            glider.refresh(true);
         $('#two').hide();
         $('#three').hide();
   $('#gallery').hide();
@@ -56,6 +57,7 @@ keypress.play();
 
     $('#sobre').on('click', function () {
 keypress.play();
+     glider.refresh(true);
 
         $('#one').hide();
   $('#gallery').hide();
@@ -75,6 +77,7 @@ keypress.play();
 
     $('#servicos').on('click', function () {
 keypress.play();
+     glider.refresh(true);
 
         $('#one').hide();
   $('#gallery').hide();
@@ -93,6 +96,7 @@ keypress.play();
 
     $('#contato').on('click', function () {
 keypress.play();
+     glider.refresh(true);
 
         $('#one').hide();
   $('#gallery').hide();
@@ -112,6 +116,7 @@ keypress.play();
 
  $('#portfolio').on('click', function () {
 keypress.play();
+     glider.refresh(true);
 
         $('#one').hide();
   $('#gallery').show();

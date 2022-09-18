@@ -10,26 +10,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Λｒｃａｎｇｅｌσ</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <meta name="viewport" content="width=device-with,initial-scale=1,maximum-scale=1,user-scalable=0">
   <link rel="stylesheet" type="text/css" href="assets/css/augmented.css">
   <link rel="icon" href="assets/images/favicon.ico" />
 
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146833088-1"></script>
-  <script src="assets/js/index.js"></script>
-  <script src="assets/js/Nav.js"></script>
-  <script src="assets/js/typing.js"></script>
 
+
+  <link rel="stylesheet" href="assets/css/glider.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="assets/css/text-cursor.css">
-<link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet"
->
+
 
   <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
   <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
+
 
 <style>
  
@@ -50,12 +46,40 @@ margin-top: 3.5%;
 
 }
 
+.glider-contain {
+
+height: 75vh;
+
+}
+
+.glider-slide {
+  border: 1px solid red;
+}
+
+.glider{
+  margin-top: 5%; 
+}
 
 
 </style>
+
+
 </head>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146833088-1"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/Nav.js"></script>
+  <script src="assets/js/typing.js"></script>
+  <script src="assets/js/glider.js"> </script>
+
+
+
 <body>
+
+
   <style>
 
   </style>
@@ -137,18 +161,48 @@ margin-top: 3.5%;
             <h1 id="portfolioTitle">Portfólio</h1>
 
 
-            <div class="servwrapper">
-             
-           <div class="glider-contain">
-  <div class="glider">
- 
+     
 
-  </div>
+
+<div class="glider-contain">
+  <div class="glider">
+    <div class="galleryItem">
+      <img src="assets/images/gallery/alpha1.png" alt="alpha">
+    </div>
+    <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+    <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+  <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+      <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+      <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+      <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+      <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+      <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+      <div class="galleryItem">
+      <img src="assets/images/gallery/marketing.png" alt="marketing">
+    </div>
+
+      </div>
 
   <button aria-label="Previous" class="glider-prev">⭀</button>
   <button aria-label="Next" class="glider-next">⥱</button>
-
 </div>
+
 
             </div>
         </section>
@@ -376,22 +430,13 @@ margin-top: 3.5%;
   </div>
 </body>
 <script src="assets/js/typing.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
 <script>
 
 //portfolio
 
 
-new Glider(document.querySelector('.glider'), {
-    slidesToShow: 2,
-  slidesToScroll: 1,
-  draggable: true,
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  }
-});
+
 //portfolio
 
 
@@ -417,8 +462,22 @@ new Glider(document.querySelector('.glider'), {
   }, 1900)
 
 
+ var glider = new Glider(document.querySelector('.glider'), {
+  slidesToShow: 3,
+  rewind: true,
+  draggable: true,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+});
 
 
+$("#portfolio").on('click', () => { 
+
+
+glider.refresh(true);
+})
 
 
   const header = String.raw`

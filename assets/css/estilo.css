@@ -121,6 +121,13 @@ body.background-haulted .header-presentation {
   animation-duration: 5s;
 }
 
+#gallery,
+#two,
+#three {
+  
+  display: none;
+  
+}
 /* .header-presentation houses all the --pjAnim vars */
 .presentation-el {
   padding: 70px;

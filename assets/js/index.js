@@ -115,6 +115,7 @@ keypress.play();
 
 
  $('#portfolio').on('click', function () {
+
 keypress.play();
      glider.refresh(true);
 
@@ -130,7 +131,15 @@ keypress.play();
 
             $('.divportfolio').removeClass("glitch--animate");
         }, 800);
+     glider.refresh(true);
 
+        $('#one').hide();
+  $('#gallery').show();
+
+        $('#two').hide();
+        $('#three').hide();
+
+        $('#four').hide();
     });
 
 

@@ -32,6 +32,12 @@
 
 
 @media (max-width: 760px) {
+  .video{
+    width: 100%;
+    height: 100%;
+    
+    
+  }
   .divportfolio,
   .divserviços {
     margin-top: 20px !important;

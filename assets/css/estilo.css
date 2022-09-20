@@ -397,8 +397,26 @@ body.background-haulted .header-presentation {
   font-size: 1rem;
 }
 
-.galleryItem {
-  border: 1px solid red;
+.marketing {
+  height: 70vh;
+  width: 40vw;
+
+}
+#lna {
+  height: 65vh;
+  width: 45vw;
+  margin-left: 20%;
+}
+
+.image {
+  height: 60vh;
+  width: 40vw;
+}
+
+#escoteiros {
+  margin-left: 15% !important;
+  width: 54vw;
+
 }
 #test {
   --aug-br1: 100px;

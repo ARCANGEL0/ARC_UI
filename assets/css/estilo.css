@@ -408,6 +408,9 @@ body.background-haulted .header-presentation {
   margin-left: 20%;
 }
 
+.card,
+.pc,
+.pet,
 .image {
   height: 60vh;
   width: 40vw;

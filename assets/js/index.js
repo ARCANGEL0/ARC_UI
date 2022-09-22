@@ -232,7 +232,7 @@ keypress.play();
             $('#buttons').toggleClass('inactive active')
             $('#buttons').show("blind");
             $('#navbar').animate({
-                height: '68vh'
+                height: '56vh'
             })
         }
         else if ($('#buttons').hasClass('active')) {

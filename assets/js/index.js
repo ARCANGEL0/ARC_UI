@@ -217,7 +217,7 @@ $(document).ready(function () {
                 $('#buttons').toggleClass('inactive active')
                 $('#buttons').show("blind");
                 $('#navbar').animate({
-                    height: '56vh'
+                    height: '76vh'
                 })
             }
             else if ($('#buttons').hasClass('active')) {

@@ -363,7 +363,7 @@ $(document).ready(function () {
                 $('#buttons').toggleClass('inactive active')
                 $('#buttons').show("blind");
                 $('#navbar').animate({
-                    height: '0vh'
+                    height: '60vh'
                 })
             }
             else if ($('#buttons').hasClass('active')) {

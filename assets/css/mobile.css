@@ -3,7 +3,7 @@
 (max-width:380px) {
   
   .slider__nav {
-  margin: 18rem 12px !important;
+  margin: 30% 12px !important;
 }
 
 
@@ -26,7 +26,7 @@
   {
 
 .slider__nav {
-  margin: 18rem 12px !important;
+  margin: 30% 12px !important;
 }
         #one {
           margin-top: 25%;
@@ -42,7 +42,7 @@
 @media (max-width: 760px) {
 
   .slider__nav {
-  margin: 12.5rem 12px !important;
+  margin: 40% 12px !important;
 }
 
 

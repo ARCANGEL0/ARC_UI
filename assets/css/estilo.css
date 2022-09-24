@@ -558,6 +558,9 @@ body.background-haulted .header-presentation {
   mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
 }
 
+.divserviços {
+  height: 85vh;
+}
 
 .icon {
   width: 130px;

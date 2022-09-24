@@ -496,7 +496,9 @@ body.background-haulted .header-presentation {
     mask-position: center -1.5rem;
   }
 }
-
+.tecnoText{
+  font-size: 10px;
+}
 .sobnote {
   font-size: 10px;
 }

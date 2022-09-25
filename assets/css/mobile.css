@@ -55,7 +55,7 @@
   margin-bottom: 10%
 }
 .formDiv{
-  margin-left:-1rem;
+  margin-left:-1.5rem !important;
 }
 .input{
   width:65% !important;

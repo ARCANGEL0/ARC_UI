@@ -41,6 +41,11 @@
 
 @media (max-width: 760px) {
 
+.formDiv 
+{
+  margin-left: -60vw;
+}
+
 
 .glider-next { 
 margin-right: 10% !important; 
@@ -400,10 +405,15 @@ margin-left: 0vw !important;
     margin-bottom: -30vh;
     width: 30vw;
     margin-left: 70%;
+    margin-top: -10vh;
   
 
 
 
+  }
+
+  .btn {
+    margin-top: 15px;
   }
 
   .logoHeader{
@@ -425,7 +435,7 @@ margin-left: 0vw !important;
     margin-left: -50.8vw !important;
     width: 75vw !important;
 
-    height: 50vh !important;
+    height: 78vh !important;
     --aug-bl: 20px !important;
     --aug-tr: 20px;
     --aug-br: 20px !important;
@@ -445,6 +455,12 @@ margin-left: 0vw !important;
     );
     mask-image: repeating-linear-gradient(black, black 2px, transparent 3px);
   }
+
+
+
+
+
+
 
   .container #four .div1 h2 {
     font-size: 12px;

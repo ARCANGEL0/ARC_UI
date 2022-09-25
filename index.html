@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 
   <link rel="stylesheet" href="assets/css/glider.css" type="text/css">
@@ -74,7 +75,6 @@ height: 75vh;
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://unpkg.com/i18n-language@1.0.4/i18n-language.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146833088-1"></script>
   <script src="assets/js/index.js"></script>
   <script src="assets/js/Nav.js"></script>
@@ -532,48 +532,36 @@ Realizo proyectos desde simples sitios web dinámicos hasta aplicaciones móvile
                 <br>
               </div>
               <br>
-              <h2>
+              <h2 class="contacticons">
                 <center>
                   <a class="contacticon" class="contacticon" target="_blank" href="https://github.com/ARCANGEL0/"> <i
-                      class="fab fa-3x fa-github"></i> </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  
+                      class="fab fa-github"></i> </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
  <a class="contacticon" href="https://api.whatsapp.com/send?phone=5513988552976" target="_blank">
 
-                    <i class="fab fa-3x fa-whatsapp"></i></a>
-                </center>
-              </h2>
-              <br><br>
-              <h2>
-                <center>
+                    <i class="fab fa-whatsapp"></i></a>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <a class="contacticon" href="https://lnadigital.com" target="_blank">
 
-                    <i class="fa fa-3x fa-laptop-code"></i></a>
+                    <i class="fa fa-laptop-code"></i></a>
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <a class="contacticon" href="mailto:henrique@arcangello.com,henri.arcangelo@gmail.com" target="_blank">
 
-                    <i class="fa fa-3x fa-envelope"></i>
+                    <i class="fa fa-envelope"></i>
 
                   </a>
-                </center>
-              </h2>
-
-              <br><br>
-              <h2>
-                <center>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
                   <a class="contacticon" href="https://www.linkedin.com/in/henrique-carreira-b-arcangelo-7965841bb/" target="_blank">
-                    <i aria-hidden="true"  class="fab fa-3x fa-linkedin"></i>
+                    <i aria-hidden="true"  class="fab fa-linkedin"></i>
                   </a>
 
                       </a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a class="contacticon" href="https://app.hackthebox.com/profile/795113" target="_blank">
-                    <i class="fa fa-3x fa-cube"></i>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  <a class="contacticon" href="https://app.hackthebox.com/profile/795113" target="_blank">
+                    <i class="fa fa-cube"></i>
                   </a>
                 </center>
 
@@ -581,10 +569,53 @@ Realizo proyectos desde simples sitios web dinámicos hasta aplicaciones móvile
               </h2>
 
 
-              <br><br>
+              <br>
+
+<div class="formDiv">
+
+                    <form action="#" id="mandaremail">
 
 
+                        <div class="form-group">
+                            <label for="nome_form">Nome</label>
+            <div class="input" augmented-ui="tr-clip-y tl-clip bl-clip-x br-clip-x exe" >
+                            <input required type="text" class="form-control" id="nome_form" placeholder="Seu nome">
+            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="email_form">Email</label>
+            <div class="input" augmented-ui="tr-clip-y tl-clip bl-clip-x br-clip-x exe" >
+
+                            <input required type="email" class="form-control" id="email_form"
+                                placeholder="exemplo@email.com">
+</div>
+                        </div>
+
+                        <div class="form-group">
+      
+                            <label for="assunto_form">Assunto</label>
+      
+                  <div class="input" augmented-ui="tr-clip-y tl-clip bl-clip-x br-clip-x exe" >
+                      <input required type="text" class="form-control" id="assunto_form"
+                                placeholder="Criação de website...">
+                                    </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="mensagem_form">Mensagem</label>
+               <div class="input" augmented-ui="tr-clip-y tl-clip bl-clip-x br-clip-x exe" >
+
+                            <textarea required class="form-control" id="mensagem_form" rows="4"></textarea>
+                        </div>
+                        </div>
+                        <button augmented-ui="tr-clip-y tl-clip bl-clip-x br-clip-x exe" id="enviar" type="submit" style="border: 0.65px solid black"
+                            class="btn">Enviar</button>
+                    </form>
+
+
+</div>
             </div>
 
 
@@ -662,6 +693,10 @@ Realizo proyectos desde simples sitios web dinámicos hasta aplicaciones móvile
   </div>
 </body>
 <script src="assets/js/typing.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>
 

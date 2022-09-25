@@ -7,7 +7,7 @@
 }
 
 .contacticon .fa, .contacticon .fab{
-  font-size: 65% !important;
+  font-size: 90% !important;
 }
 
 
@@ -29,7 +29,7 @@
   (max-width: 764px) 
   {
 .contacticon .fa, .contacticon .fab{
-  font-size: 65% !important;
+  font-size: 90% !important;
 }
 
 
@@ -50,7 +50,7 @@
 @media (max-width: 760px) {
 
 .contacticon .fa, .contacticon .fab{
-  font-size: 65% !important;
+  font-size: 90% !important;
 }
 
 .formDiv 

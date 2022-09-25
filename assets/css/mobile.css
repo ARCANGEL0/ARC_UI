@@ -7,7 +7,7 @@
 }
 
 .contacticon i{
-  font-size: 60%;
+  font-size: 56% !important;
 }
 
 
@@ -29,7 +29,7 @@
   (max-width: 764px) 
   {
 .contacticon i{
-  font-size: 60%;
+  font-size: 56% !important;
 }
 
 
@@ -50,7 +50,7 @@
 @media (max-width: 760px) {
 
 .contacticon i{
-  font-size: 60%;
+  font-size: 56% !important;
 }
 
 .formDiv 

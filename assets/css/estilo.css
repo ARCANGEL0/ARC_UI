@@ -734,7 +734,7 @@ textarea:focus, input:focus{
   color: inherit;
 }
 
-.contacticon i {
+.contacticon .fa, .contacticon .fab {
     font-size: 120%;
 
 }

@@ -6,6 +6,10 @@
   margin: 30% 12px !important;
 }
 
+.contacticons i{
+  font-size: 1rem;
+}
+
 
 #serviceTitle,
 #portfolioTitle {

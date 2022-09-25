@@ -6,7 +6,7 @@
   margin: 30% 12px !important;
 }
 
-.contacticon .fa{
+.contacticon .fa, .contacticon .fab{
   font-size: 56% !important;
 }
 
@@ -28,7 +28,7 @@
   (min-width: 410px) and
   (max-width: 764px) 
   {
-.contacticon .fa{
+.contacticon .fa, .contacticon .fab{
   font-size: 56% !important;
 }
 
@@ -49,7 +49,7 @@
 
 @media (max-width: 760px) {
 
-.contacticon .fa{
+.contacticon .fa, .contacticon .fab{
   font-size: 56% !important;
 }
 

@@ -41,6 +41,14 @@
 
 @media (max-width: 760px) {
 
+
+.glider-next { 
+margin-right: 10% !important; 
+}
+
+.glider-prev {
+  margin-left: 10% !important;
+}
   .slider__nav {
   margin: 40% 12px !important;
 }

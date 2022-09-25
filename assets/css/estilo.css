@@ -1152,7 +1152,10 @@ h1.top-left {
 .servwrapper li {
   font-size: 20px;
   color: var(--gold);
+  margin-bottom: 3.5%;
 }
+
+
 .servone,
 .servtwo,
 .servthree,
@@ -1506,6 +1509,7 @@ h1.top-left {
 .slidetitle {
   margin-top: 20px;
   color: var(--gold) !important;
+  margin-bottom: 2.5%;
 }
 .firstcaption {
   padding-left: 15px;

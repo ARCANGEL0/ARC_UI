@@ -28,6 +28,10 @@
   (min-width: 410px) and
   (max-width: 764px) 
   {
+.contacticon i{
+  font-size: 60%;
+}
+
 
 .slider__nav {
   margin: 30% 12px !important;
@@ -44,6 +48,10 @@
 
 
 @media (max-width: 760px) {
+
+.contacticon i{
+  font-size: 60%;
+}
 
 .formDiv 
 {

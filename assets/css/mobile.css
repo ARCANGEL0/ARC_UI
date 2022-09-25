@@ -52,7 +52,7 @@
 
 .form-group
 {
-  margin-bottom: 5%
+  margin-bottom: 10%
 }
 .formDiv{
   margin-left:-1rem;
@@ -66,6 +66,7 @@
 
 .formDiv 
 {
+  margin-top:-5px !important;
   margin-left: -60vw;
 }
 

@@ -875,7 +875,7 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
         
   <h1 style="margin: 0px; line-height: 140%; text-align: center; word-wrap: break-word; font-weight: normal; font-family: 'Rubik',sans-serif; font-size: 22px;">
     <div>
-<div>`+ $("#mesaje_form").val()+`</div>
+<div>`+ $("#mensaje_form").val()+`</div>
 </div>
   </h1>
 

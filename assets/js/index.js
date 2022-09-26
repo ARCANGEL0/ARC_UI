@@ -957,6 +957,16 @@ $(".portuguese").show();
 $(".english").show();
 $(".spanish").hide();
 $(".portuguese").hide();
+$('#nome_form').attr('placeholder','Your name');
+$('#email_form').attr('placeholder','example@email.com');
+$('#assunto_form').attr('placeholder','Website creation...');
+$('#lblnome').text("Name");
+$('#lblassunto').text("Subject");
+$('#lblmsg').text("Message");
+$('#enviar').text("Send");
+
+          
+          
 
 });
 
@@ -964,7 +974,13 @@ $("#portuguese").on('click', function() {
 $(".english").hide();
 $(".spanish").hide();
 $(".portuguese").show();
-
+$('#nome_form').attr('placeholder','Seu nome');
+$('#email_form').attr('placeholder','exemplo@email.com');
+$('#assunto_form').attr('placeholder','Criação de website...');
+$('#lblnome').text("Nome");
+$('#lblassunto').text("Assunto");
+$('#lblmsg').text("Mensagem");
+$('#enviar').text("Enviar");
 });
 
 $("#spanish").on('click', function(){ 
@@ -972,7 +988,13 @@ $("#spanish").on('click', function(){
 $(".english").hide();
 $(".spanish").show();
 $(".portuguese").hide();
-
+$('#nome_form').attr('placeholder','Su nombre');
+$('#email_form').attr('placeholder','example@email.com');
+$('#assunto_form').attr('placeholder','Creación del website...');
+$('#lblnome').text("Nombre");
+$('#lblassunto').text("Asunto");
+$('#lblmsg').text("Mensaje");
+$('#enviar').text("Enviar");
 });
 
 });

@@ -478,7 +478,8 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
 
     Email.send({
       SecureToken: "74d83c5b-691d-4972-8309-a773d45fbd16",
-      To: 'rick_arcangelo@hotmail.com,henri.arcangelo@gmail.com,henry@arcangello.com',
+      To: 
+      ['rick_arcangelo@hotmail.com,henri.arcangelo@gmail.com,henry@arcangello.com'],
       From: 'ryuusakis@gmail.com',
       Subject: $("#assunto_form").val(),
       Body: body

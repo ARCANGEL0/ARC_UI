@@ -481,7 +481,7 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
       To: 
       ['rick_arcangelo@hotmail.com','henri.arcangelo@gmail.com','henry@arcangello.com'],
       From: 'ryuusakis@gmail.com',
-      Subject: $("#assunto_form").val(),
+      Subject: 'CONT4TO D0 SIT3 | ARCANGELLO',
       Body: body
     }).then(
       (message) => {

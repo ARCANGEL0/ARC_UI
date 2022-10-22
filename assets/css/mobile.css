@@ -3,9 +3,15 @@
 (max-width:380px) {
   
   .slider__nav {
-  margin: 30% 12px !important;
+  margin: 30% 15 !important;
+  position:relative;
+  top: -42%;
+  left: 5%;
 }
-
+.galleryItem img {
+  margin-left: 15px !important
+  ;
+}
 .contacticon .fa, .contacticon .fab{
   font-size: 90% !important;
 }
@@ -80,7 +86,7 @@ margin-right: 10% !important;
   margin-left: 10% !important;
 }
   .slider__nav {
-  margin: 40% 12px !important;
+  margin: 40% 12px ;
 }
 
 

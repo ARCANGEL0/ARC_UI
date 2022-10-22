@@ -688,7 +688,7 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
     $('#buttons').toggleClass('active inactive');
                 $('#buttons').hide("blind");
                 $('#navbar').animate({
-                    height: '12vh'
+                    height: '8vh'
                 })
                 $('#close').animate({
                     'margin-top': '0px'
@@ -706,14 +706,14 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
                 $('#buttons').toggleClass('inactive active')
                 $('#buttons').show("blind");
                 $('#navbar').animate({
-                    height: '70vh'
+                    height: '60vh'
                 })
             }
             else if ($('#buttons').hasClass('active')) {
                 $('#buttons').toggleClass('active inactive');
                 $('#buttons').hide("blind");
                 $('#navbar').animate({
-                    height: '12vh'
+                    height: '8vh'
                 })
                 $('#close').animate({
                     'margin-top': '0vh'

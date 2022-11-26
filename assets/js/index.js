@@ -914,13 +914,14 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
             color = 2;
         break;
       case 2:
-            $(':root').css('--gold88', 'rgba(255,0,0, 0.53)');
-            $(':root').css('--gold', '#ff0400');
-            $(':root').css('--goldDark', '#ed2525');
-            $(':root').css('--hovercolor', '#ffc400');
-            $(':root').css('--hovercolorbg', 'rgba(255,196,0,0.3)');
+            
+             $(':root').css('--gold88', 'rgba(0, 255, 213, 0.53)');
+            $(':root').css('--gold', '#00ffd5');
+            $(':root').css('--goldDark', '#25edc2');
+            $(':root').css('--hovercolor', '#FF0000');
+            $(':root').css('--hovercolorbg', 'rgba(255, 0, 4, .25098039215686274)');
             $(':root').css('--inputfocus', 'rgba(23, 255, 216, 0.644)');
-            $(':root').css('--termcolor', '#0f0000');
+            $(':root').css('--termcolor', '#000f0d');
             color=3;
             break;
         case 3:
@@ -935,13 +936,15 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
             color=4;
             break;
         case 4:
-             $(':root').css('--gold88', 'rgba(0, 255, 213, 0.53)');
-            $(':root').css('--gold', '#00ffd5');
-            $(':root').css('--goldDark', '#25edc2');
-            $(':root').css('--hovercolor', '#FF0000');
-            $(':root').css('--hovercolorbg', 'rgba(255, 0, 4, .25098039215686274)');
+
+        $(':root').css('--gold88', 'rgba(255,0,0, 0.53)');
+            $(':root').css('--gold', '#ff0400');
+            $(':root').css('--goldDark', '#ed2525');
+            $(':root').css('--hovercolor', '#ffc400');
+            $(':root').css('--hovercolorbg', 'rgba(255,196,0,0.3)');
             $(':root').css('--inputfocus', 'rgba(23, 255, 216, 0.644)');
-            $(':root').css('--termcolor', '#000f0d');
+            $(':root').css('--termcolor', '#0f0000');
+            
             color=0;
             break;
         }

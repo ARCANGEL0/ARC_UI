@@ -33,13 +33,13 @@ html {
   --hot-blue: var(--hbl, #b1ffff);
   --hot-red: #ff604d;
   --hot-green: #b9ffb1;
-  --gold: #00ffd5;
-  --gold88: rgba(0, 255, 213, 0.53);
-  --goldDark: #25edc2;
-  --hovercolor: #ff0000;
-  --hovercolorbg: rgba(255, 0, 4, 0.25098039215686274);
+  --gold: #ff0400;
+  --gold88: rgba(255,0,0, 0.53);
+  --goldDark: #ed2525;
+  --hovercolor: #ffc400;
+  --hovercolorbg: rgba(255,196,0,0.3);
   --inputfocus: rgba(23, 255, 216, 0.644);
-  --termcolor: #000f0d;
+  --termcolor: #0f0000;
 }
 body {
   background-color: black;

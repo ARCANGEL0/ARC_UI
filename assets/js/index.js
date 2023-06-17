@@ -479,7 +479,7 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
     Email.send({
       SecureToken: "74d83c5b-691d-4972-8309-a773d45fbd16",
       To: 
-      ['rick_arcangelo@hotmail.com','henry.arcangello@gmail.com','henry@arcangello.com'],
+      ['rick_arcangelo@hotmail.com','henry.arcangello@gmail.com','henry.arcangello@proton.me'],
       From: 'ryuusakis@gmail.com',
       Subject: 'CONT4TO D0 SIT3 | ARCANGELLO',
       Body: body

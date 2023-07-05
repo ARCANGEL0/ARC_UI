@@ -882,7 +882,7 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
         }
 
     });
-
+            
              $(':root').css('--gold88', 'rgba(0, 255, 213, 0.53)');
             $(':root').css('--gold', '#00ffd5');
             $(':root').css('--goldDark', '#25edc2');

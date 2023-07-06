@@ -882,14 +882,13 @@ table, td { color: #f87575; } @media (max-width: 480px) { #u_content_image_1 .v-
         }
 
     });
-            
-             $(':root').css('--gold88', 'rgba(0, 255, 213, 0.53)');
-            $(':root').css('--gold', '#00ffd5');
-            $(':root').css('--goldDark', '#25edc2');
+           $(':root').css('--gold88', '#02FF0087');
+            $(':root').css('--gold', '#29FF00');
+            $(':root').css('--goldDark', '#45ED25');
             $(':root').css('--hovercolor', '#FF0000');
-            $(':root').css('--hovercolorbg', 'rgba(255, 0, 4, .25098039215686274)');
-            $(':root').css('--inputfocus', 'rgba(23, 255, 216, 0.644)');
-            $(':root').css('--termcolor', '#000f0d');
+            $(':root').css('--hovercolorbg', '#FF000040');
+            $(':root').css('--inputfocus', 'rgba(23, 255, 42, .6431372549019608)');
+            $(':root').css('--termcolor', '#040F00');
         // Color changer
       var color = 0;
 
